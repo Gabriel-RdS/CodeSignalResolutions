@@ -18,8 +18,12 @@ def rotateImage2(a):
             a[i][j], a[j][i] = a[j][i], a[i][j]
     return a
 
-# or
 
+# Testes
+array1 = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
 
-def rotateImage3(a):
-    return [[x[i] for x in a][::-1] for i in range(len(a))]
+print(rotateImage(array1))
+print(rotateImage2(array1))
+
